@@ -10,7 +10,6 @@
       <h1>CatPhotoApp</h1>
       <section>
         <h2>Cat Photos</h2>
-        <!-- TODO: Add link to cat photos -->
         <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
         <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
       </section>
@@ -18,28 +17,33 @@
         <h2>Cat Lists</h2>
         <h3>Things cats love:</h3>
         <ul>
-          <li>cat nip</li>
+          <li>catnip</li>
           <li>laser pointers</li>
-          <li>lasagna</li>
+          <li>cuddles</li>
         </ul>
         <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
-          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+          <img src="https://preview.redd.it/just-found-this-adorable-picture-of-2-kittens-cuddling-v0-lgmdnyc5bd291.jpg?auto=webp&s=84df303b2687a58e909c080aafd5bbfef6dab9d0" alt="Two cats are sleeping together.">
+          <figcaption>Cats <em>love</em> cuddles.</figcaption>  
         </figure>
         <h3>Top 3 things cats hate:</h3>
         <ol>
           <li>flea treatment</li>
           <li>thunder</li>
-          <li>other cats</li>
+          <li>dogs</li>
         </ol>
         <figure>
-          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+          <img src="https://media.istockphoto.com/id/646828826/photo/fight-cat-dog.jpg?s=612x612&w=0&k=20&c=lap_CVqMnxlaBdIxB1rUhMXNrXsLggnByR5ugbiOpfo=" alt="A cat fights a dog.">
+          <figcaption>Cats <strong>hate</strong> dogs.</figcaption>  
         </figure>
       </section>
       <section>
         <h2>Cat Form</h2>
         <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>What is your cat's gender?</legend>
+            <label><input id="female" type="radio" name="female-male" value="female" checked> Female</label>
+            <label><input id="male" type="radio" name="female-male" value="male"> Male</label>
+          </fieldset>
           <fieldset>
             <legend>Is your cat an indoor or outdoor cat?</legend>
             <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
@@ -52,7 +56,7 @@
             <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
           </fieldset>
           <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-          <button type="submit">Submit</button>
+          <button id="submit" type="submit">Submit</button>
         </form>
       </section>
     </main>
