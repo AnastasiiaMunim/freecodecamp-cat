@@ -65,6 +65,14 @@ footer a:hover {
 }
 
 #submit {
-  background-color: #7AA3FF;
+    background-color: #7AA3FF;
+    font-size: 20px;
 }
 
+div {
+    font-size: 20px;
+}
+
+#catphotourl {
+    font-size: 20px;
+}
